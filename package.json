@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./myPortfolio/wwwroot/css/app.css -o ./myPortfolio/wwwroot/css/app.min.css --watch",
-    "build": "npx @tailwindcss/cli -i **/app.css -o ./myPortfolio/wwwroot/css/app.min.css --minify"
+    "build": "npx @tailwindcss/cli -i ./myPortfolio/wwwroot/css/app.css -o ./myPortfolio/wwwroot/css/app.min.css --minify"
   },
   "keywords": [],
   "author": "",

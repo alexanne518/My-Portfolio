@@ -27,29 +27,26 @@
     }
 </style>
 <div class="bg-[#0b0f1a] min-h-screen text-slate-200 selection:bg-fuchsia-500/30">
-    @* HERO SECTION*@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden border-b border-white/5 bg-[#0b0f1a]">
 
-        @* 1. THE ARCHITECTURAL BACKGROUND *@ x
         <div class="absolute inset-0 z-0">
-            @* Radial Gradient for depth *@
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0)_0%,rgba(11,15,26,1)_100%)]"></div>
 
-            @* Animated "Logic Grid" texture *@
+            @* grid *@
             <div class="absolute inset-0 opacity-[0.15]"
                  style="background-image: linear-gradient(#334155 1px, transparent 1px), linear-gradient(90deg, #334155 1px, transparent 1px); background-size: 50px 50px;">
             </div>
 
-            @* Moving Light Orbs *@
+            @* moving light behind background *@
             <div class="absolute top-[-10%] left-[-5%] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[130px] rounded-full animate-pulse"></div>
             <div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-cyan-500/10 blur-[130px] rounded-full"></div>
         </div>
 
-        @* 2. MAIN CONTENT *@
+        @* main content *@
         <div class="relative z-10 max-w-6xl mx-auto px-6">
             <div class="flex flex-col items-center">
 
-                @* Status Badge *@
+                @* status Badge *@
                 <div class="group cursor-default mb-10 px-5 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl transition-all hover:border-fuchsia-500/40">
                     <div class="flex items-center gap-3">
                         <div class="flex h-2 w-2 relative">
@@ -62,7 +59,6 @@
                     </div>
                 </div>
 
-                @* Typography Overhaul *@
                 <div class="text-center space-y-4">
                     <h2 class="text-fuchsia-500 font-mono tracking-[0.5em] uppercase text-sm mb-2 animate-fade-in">Computer Science student</h2>
 
@@ -70,15 +66,15 @@
                         ALEXANNE <br />
                         <span class="relative">
                             <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-violet-400 to-cyan-400">FORTIN</span>
-                            @* Abstract underline *@
                             <div class="absolute -bottom-2 left-0 w-full h-[6px] bg-gradient-to-r from-fuchsia-500/50 to-transparent blur-sm"></div>
                         </span>
                     </h1>
                 </div>
 
-                @* The "Bridge" Description *@
+                @* desc *@
                 <div class="mt-12 max-w-2xl text-center">
                     <p class="text-xl md:text-2xl text-slate-400 leading-relaxed font-light">
+                        Hello, I am a student in my final semester <span class="text-white font-medium border-b border-emerald-500/50">looking for an internship</span> that will allow me to get my diploma. <br />
                         Learning and practicing <span class="text-white font-medium border-b border-emerald-500/50">programming</span> to expande and explore more feilds in <span class="text-white font-medium">Full-Stack development</span>.
                     </p>
                 </div>
@@ -87,7 +83,6 @@
             </div>
         </div>
 
-        @* 3. DECORATIVE SIDE ELEMENTS (The "Low Level" Aesthetic) *@
         <div class="absolute bottom-10 left-10 hidden xl:block">
             <div class="flex flex-col gap-2 opacity-20 font-mono text-[10px] text-slate-500">
                 <p>> KOTLIN_INIT_SUCCESS</p>
@@ -97,26 +92,26 @@
         </div>
     </section>
 
-    @* TECH STACK SECTION - Balanced Asymmetric Layout *@
     <div id="skills" class="py-24 max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-            @* LEFT COLUMN: Established Skills (Stacked Vertically) *@
             <div class="flex flex-col gap-8">
-                @* Languages *@
+                @* languages *@
                 <div class="group p-8 rounded-[2.5rem] bg-slate-900/40 border border-white/5 backdrop-blur-xl transition-all hover:border-fuchsia-500/30">
                     <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                         <span class="w-8 h-[1px] bg-fuchsia-500"></span> Languages
                     </h3>
                     <ul class="grid grid-cols-2 gap-4 text-slate-400">
-                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> C# & Java</li>
-                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> HTML & CSS & BootStrap & javascript</li>
-                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> Swift & PHP</li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> C# </li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> Java</li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> Swift</li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> PHP</li>
                         <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> Orcale & SQL & Firebase</li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-fuchsia-500"></div> HTML & CSS & BootStrap & javascript</li>
                     </ul>
                 </div>
 
-                @* Frameworks *@
+                @* fameowrks *@
                 <div class="group p-8 rounded-[2.5rem] bg-slate-900/40 border border-white/5 backdrop-blur-xl transition-all hover:border-violet-500/30">
                     <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                         <span class="w-8 h-[1px] bg-violet-500"></span> Frameworks
@@ -124,17 +119,18 @@
                     <ul class="grid grid-cols-2 gap-4 text-slate-400">
                         <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-violet-500"></div> ASP.NET Core</li>
                         <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-violet-500"></div> .NET MAUI</li>
+                        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-violet-500"></div> Entity</li>
                         <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-violet-500"></div> Blazor</li>
                     </ul>
                 </div>
             </div>
 
-            @* RIGHT COLUMN: Next Horizons (Full Height) *@
+            @* what im learning *@
             <div class="group p-8 rounded-[2.5rem] bg-gradient-to-br from-slate-900/80 to-slate-950 border border-cyan-500/20 transition-all hover:border-cyan-500/50">
                 <div class="flex justify-between items-start mb-8">
                     <h3 class="text-2xl font-bold text-cyan-400">Next Horizons</h3>
                     <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-[10px] font-mono text-cyan-500 animate-pulse">
-                        SYSTEM_UPDATING
+                        SYSTEMS_UPDATING
                     </span>
                 </div>
 
@@ -159,7 +155,7 @@
         </div>
     </div>
 
-    @* TECHNICAL SHOWCASE *@
+    @* title *@
     <div class="mt-24 w-full flex flex-col items-center pb-20 px-6">
         <div class="flex flex-col items-center mb-16 text-center">
             <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight">
@@ -168,7 +164,7 @@
             <div class="h-1.5 w-32 bg-gradient-to-r from-yellow-400 to-cyan-400 rounded-full mt-4"></div>
         </div>
 
-        @* --- SECTION 1: ACTIVE DEPLOYMENTS (Ongoing) --- *@
+        @* section fo r my active projects *@
     <div class="mb-20">
             <div class="flex items-center gap-4 mb-10">
                 <h2 class="text-4xl font-black text-white">Active <span class="text-fuchsia-500">Development</span></h2>
@@ -190,19 +186,31 @@
 
                 @* Recify - iOS *@
                 <div class="group relative p-1 bg-gradient-to-br from-orange-500 via-red-500 to-transparent rounded-[3rem] transition-all hover:scale-[1.02]">
-                        <div class="bg-slate-950 rounded-[2.9rem] p-8 md:p-12 h-full relative overflow-hidden">
-                            <div class="absolute top-6 right-8 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-[10px] font-mono text-orange-400">IN_REFINEMENT</div>
-                            <h3 class="text-3xl font-black text-white mb-4">Recify iOS</h3>
-                            <p class="text-slate-400 mb-8 text-lg">Recipe management engine built with SwiftUI and Firebase. Focused on high-performance UX and real-time social sharing.</p>
-                        <a href="https://github.com/250evelyne/Recify" target="_blank" class="inline-flex items-center text-white font-black hover:gap-4 transition-all gap-2">
+                    <div class="bg-slate-950 rounded-[2.9rem] p-8 md:p-12 h-full relative overflow-hidden">
+                        <div class="absolute top-6 right-8 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-[10px] font-mono text-orange-400">IN_REFINEMENT</div>
+                        <h3 class="text-3xl font-black text-white mb-4">Recify iOS</h3>
+                        <p class="text-slate-400 mb-8 text-lg">Recipe management engine built with SwiftUI and Firebase. Focused on high-performance UX and real-time social sharing.</p>
+        
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <a href="https://github.com/250evelyne/Recify" target="_blank" class="inline-flex items-center text-white font-black hover:gap-4 transition-all gap-2">
                                 EXPLORE REPOSITORY <span class="text-orange-400">→</span>
                             </a>
+            
                         </div>
+                            @* The New Pop-up Trigger *@
+                            <button @onclick="() => showRecifyModal = true" class="text-orange-400 font-bold hover:text-orange-300 transition-colors cursor-pointer">
+                                VIEW SCREENSHOTS
+                            </button>
                     </div>
                 </div>
+                
+
+
+
+            </div>
             </div>
 
-        @* --- SECTION 2: COMPLETED SYSTEMS --- *@
+        @* sections for old projects *@
         <div class="mt-32">
             <div class="flex items-center gap-4 mb-10">
                 <h2 class="text-4xl font-black text-white">System <span class="text-cyan-500">Archive</span></h2>
@@ -210,7 +218,7 @@
             </div>
 
             <div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8">
-                @* Stay Healthy - Android *@
+                @* stay healthy *@
                 <div class="group p-8 rounded-[2.5rem] bg-slate-900/40 border border-white/5 transition-all hover:bg-slate-900/60">
                     <p class="text-[10px] text-cyan-500 font-mono mb-2 uppercase tracking-widest">Android / Java </p>
                     <h3 class="text-2xl font-bold text-white mb-4">Stay Healthy</h3>
@@ -221,7 +229,7 @@
                     </div>
                 </div>
 
-                @* Laval Life - Web *@
+                @* laval life *@
                 <div class="group p-8 rounded-[2.5rem] bg-slate-900/40 border border-white/5 transition-all hover:bg-slate-900/60">
                     <p class="text-[10px] text-cyan-500 font-mono mb-2 uppercase tracking-widest">Web / ASP.NET </p>
                     <h3 class="text-2xl font-bold text-white mb-4">Laval Life</h3>
@@ -235,12 +243,12 @@
         </div>
     </div>
 
-    @* CONTACT SECTION  *@
+    @* fo rcontatcs  *@
     <section id="contact" class="mt-32 pb-20 max-w-6xl mx-auto px-6 relative z-10">
         <div class="relative group p-[2px] rounded-[3rem] bg-gradient-to-r from-fuchsia-600 via-violet-500 to-cyan-500 shadow-2xl">
             <div class="bg-[#0b0f1a] rounded-[2.9rem] p-10 md:p-16 relative overflow-hidden">
 
-                @* Background Glows for the Contact Box *@
+                @* back gforund color *@
                 <div class="absolute top-0 right-0 w-96 h-96 bg-fuchsia-500/10 blur-[120px] rounded-full"></div>
                 <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
 
@@ -258,10 +266,19 @@
                         <div class="inline-block px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs uppercase tracking-widest">
                             Status: Ready for work
                         </div>
+
+                        @* open my cv in a new tab so they can downlaod it *@
+                        <a href="cv/Alexanne FortinCVITLastest.pdf" 
+                           target="_blank" 
+                           class="px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold rounded-full transition-all flex items-center gap-2 w-fit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            View My CV
+                        </a>
+
                     </div>
 
                     <div class="grid grid-cols-1 gap-4">
-                        @* EMAIL BUTTON *@
+                        @* email *@
                         <a href="mailto:alexannefortin18@gmail.com" class="group flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-fuchsia-500/50 transition-all hover:bg-white/[0.08]">
                             <div class="w-12 h-12 rounded-xl bg-fuchsia-500/20 flex items-center justify-center text-fuchsia-400 group-hover:scale-110 transition-transform">
                                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -274,7 +291,7 @@
                             </div>
                         </a>
 
-                        @* LINKEDIN BUTTON *@
+                        @* linkendin *@
                         <a href="https://www.linkedin.com/in/alexanne-fortin-1a81a1351/" target="_blank" class="group flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-all hover:bg-white/[0.08]">
                             <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -287,7 +304,7 @@
                             </div>
                         </a>
 
-                        @* GITHUB BUTTON *@
+                        @* git *@
                         <a href="https://github.com/alexanne518" target="_blank" class="group flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/50 transition-all hover:bg-white/[0.08]">
                             <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -305,3 +322,74 @@
         </div>
     </section>
 </div>
+
+@if (showRecifyModal)
+{
+    <div class="fixed inset-0 z-[999] flex items-center justify-center p-4 md:p-10 bg-slate-950/95 backdrop-blur-xl" @onclick="() => showRecifyModal = false">
+        
+        <div class="bg-slate-950 border border-orange-500/20 p-8 md:p-12 rounded-[3rem] max-w-4xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl no-scrollbar" @onclick:stopPropagation>
+            
+            <button @onclick="() => showRecifyModal = false" class="absolute top-8 right-10 text-slate-500 hover:text-orange-500 text-4xl font-light cursor-pointer transition-colors">&times;</button>
+
+            <h3 class="text-3xl font-black text-white mb-12 text-center">Recify <span class="text-orange-500">iOS Gallery</span></h3>
+
+            @*2 col grid for laptop and tablet*@
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8 justify-items-center">
+
+                @*the vid demo*@
+                <div class="flex flex-col items-center gap-4">
+                    <div class="relative group">
+                        @* vid tag  *@
+                        <video src="images/Screen Recording 2026-03-28 at 3.09.33 PM.mov" 
+                               autoplay loop muted playsinline
+                               class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl object-cover">
+                            Your browser does not support the video tag.
+                        </video>
+        
+                        @* vid badge for user *@
+                        <div class="absolute top-4 right-4 bg-orange-500 text-[8px] font-black px-2 py-1 rounded-full text-white tracking-widest uppercase">
+                            Demo
+                        </div>
+                    </div>
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">In-App Motion</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-4">
+                    <img src="images/Screenshot 2026-03-28 at 3.47.37 PM.png" alt="Recipe View" 
+                         class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl" />
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">Recipe Details</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-4">
+                    <img src="images/Screenshot 2026-03-28 at 3.47.24 PM.png" alt="Create collection" 
+                         class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl" />
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">Collections</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-4 md:col-span-2">
+                    <img src="images/Screenshot 2026-03-28 at 3.49.16 PM.png" alt="Search filter" 
+                         class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl" />
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">Search Filter</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-4">
+                    <img src="images/Screenshot 2026-03-28 at 3.48.00 PM.png" alt="Shopping list" 
+                         class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl" />
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">Shopping List</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-4">
+                    <img src="images/Screenshot 2026-03-28 at 3.48.18 PM.png" alt="Ingredient view" 
+                         class="h-[500px] w-auto rounded-[2.5rem] border-[6px] border-slate-900 shadow-2xl" />
+                    <span class="text-slate-500 font-mono text-xs uppercase tracking-widest">Ingredients</span>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+}
+@code {
+    private bool showRecifyModal = false;
+}
